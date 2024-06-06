@@ -67,3 +67,12 @@ main {
 .hide {
     opacity: 0;
 }
+
+.canvas {
+    width: 90%;
+}
+
+#box-canvas {
+    margin: auto;
+    width: 90%;
+}

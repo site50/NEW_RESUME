@@ -30,34 +30,17 @@
 				<span class="circle7">Angular</span>
 				<span class="center">Web developer</span>
 			</div>
-			<canvas id="canvas" style='display:none'> </canvas>
+			<div id="box-canvas">
+				<canvas id="canvas" width=1440 height=650> </canvas>
+			</div>
 		</div>
 
 		<script type='text/javascript'>
 			var canvas = document.getElementById("canvas");
 			var ctx = canvas.getContext("2d");
-			function fitWindow() {
-				canvas.width = window.innerWidth
-				canvas.height = window.innerHeight
-			}
-			fitWindow()
-			var x = 250;
-			var y = 30;
-			var i = 0;
-			var x1 = 195;
-			var y1 = 195;
-			var i1 = 0;
-			var i2 = 0;
-			var hello = ['', '', '', '', 'H', 'E', 'L', 'L', 'O', '!', '', '', '', '', '', '', '', '', ''];
-			var nameR = ['', 'I', '', 'A', 'M', '', '', 'R', 'I', 'M', 'M', 'A', '', 'B', 'O', 'G', 'D', 'A', 'N', 'O', 'V', 'A', ''];
-			var webdev = ['', '', '', '', 'W ', 'e', 'b', '', 'D', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '', '', '', '', '', ''];
-			var x2 = 0;
-			var vx2 = 2;
-			var t1 = 0; var t2 = 5;
-			var k = 2;
 			setTimeout(function () {
 				document.getElementById('canvas').style = "display:block";
-				document.getElementById('line-center').style = "opacity:0.1;filter:alpha(opacity=13)";
+				document.getElementById('line-center').style = "opacity:0.1;";
 				document.querySelector('.circle5').style = "transition-duration:7s;top:-32em;";
 				document.querySelector('.circle1').style = "transition-duration:12s;top:-32em;";
 				document.querySelector('.circle2').style = "transition-duration:13s;top:-32em;";
@@ -68,38 +51,47 @@
 				document.querySelector('.circle7').style = "transition-duration:13s;top:-32em;";
 				document.querySelector('.center').style = "transition-duration:14s;top:-32em;";
 
+				var x = 315;
+				var y = 165;
+				var i = 0;
+				var x1 = 285;
+				var y1 = 235;
+				var i1 = 0;
+				var i2 = 0;
+				var hello = ['', '', '', '', 'H', 'E', 'L', 'L', 'O', '!', '', '', '', '', '', '', '', '', '', ''];
+				var nameR = ['', '', 'I', 'A', 'M', '', 'R', 'I', 'M', 'M', 'A', '', 'B', 'O', 'G', 'D', 'A', 'N', 'O', 'V', 'A'];
+				var webdev = ['', '', '', '', '', 'W ', 'e', 'b', '', 'D', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '', '', ''];
 				var timer = setInterval(function () {
 					i = i + 1
 					x = x + 70
 					i1 = i1 + 1
 					i2 = i2 + 1
 					x1 = x1 + 45
-					t1 = t1 + 100;
 					ctx.beginPath();
 					ctx.fillStyle = "white";
-					if (t1 == 1000) {
-						t2 = t2 - 70;
-					}
+					ctx.textAlign = "center";
 					ctx.shadowColor = "white";
 					ctx.textBaseline = 'middle';
-					ctx.font = "65px Georgia";
+					ctx.font = "75px Georgia";
 					ctx.fillText(hello[i1], x, y);
-					ctx.fill();
-					console.log(x, y);
+					console.log(i1);
 					ctx.beginPath();
-					ctx.textAlign = "center";
 					ctx.font = "45px Georgia";
 					ctx.fillStyle = 'green';
-					ctx.fillText(nameR[i2], x1, y1);
+					ctx.shadowColor = "white";
+					ctx.fillText(nameR[i2], x1, y + 180);
+					console.log(i2);
+
 					ctx.beginPath();
-					ctx.textAlign = "center";
 					ctx.font = "55px Georgia";
 					ctx.fillStyle = 'orange';
-					ctx.fillText(webdev[i], x1, y1 + 180);
+					ctx.shadowColor = "white";
+					ctx.fillText(webdev[i], x1, y1 + 295);
+					console.log(i);
 					if (i == nameR.length - 1) {
 						clearInterval(timer);
 					}
-				}, 203);
+				}, 205);
 			}, 7000);
 		</script>
 	</main>
