@@ -21,7 +21,7 @@
     border-radius: 30px 30px 30px 30px;
     border:5px solid white;
     }
-    #ex-an{
+    .ex-an{
     margin-left: 1em;
     margin-right: 1em;
     width: 30%;
@@ -108,13 +108,13 @@ margin-bottom: 85px;
     line-height: 0.4;
     font-size: 1.4vw;
     }
-    #wrap-p, #title-skills{
+    #wrap-p, .title-skills{
     text-align: initial;
     padding: 0.5em;
     margin: 0.2em;
     font-size: 1.4vw;
     }
-    #wrap-p:hover, #title-skills:hover {
+    #wrap-p:hover, .title-skills:hover {
     background-color: orange;
     box-shadow: 6px 9px 5px 1px #323232c2;
     border-radius: 10px;
