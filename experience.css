@@ -1,0 +1,139 @@
+.wrapper-box{
+    width: 100%;
+     justify-content: center;
+    display: flex;
+            }
+    div[class^="exper"]{
+    background-color: orange;
+    cursor:pointer;
+    height: 5vw;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 100px / 120px;
+    color: white;
+    margin-bottom:1rem;
+    border: 5px solid green;
+    transition : background-color 1s, border 1s, border-radius 1s;
+    }
+    .exper1:hover, .exper2:hover, .exper3:hover{
+    background-color: green;
+    border-radius: 30px 30px 30px 30px;
+    border:5px solid white;
+    }
+    #ex-an{
+    margin-left: 1em;
+    margin-right: 1em;
+    width: 30%;
+    }
+    .anima1{ 
+    position: relative;
+    animation-name:anima1;
+    animation-duration:3s;
+    }
+    @keyframes anima1{
+    from { 
+    -webkit-transform: translateX(-100%) } 
+    0% {
+    opacity: 0;
+    }
+    50% {
+    opacity: 0.7;
+    }
+    100% {
+    opacity: 1;
+    }
+    }	
+    .anima2{
+    animation-name:anima2;
+    animation-duration:23s;
+    }
+    @keyframes anima2{
+    0%   {-webkit-transform: translateY(-100%); }
+    25%  { -webkit-transform: translateY(0%);}
+    }
+    .anima3{
+    animation-name:anima3;
+    animation-duration:3s;
+    }
+    @keyframes anima3{
+    from { 
+    -webkit-transform: translateX(+100%) } 
+    0% {
+    opacity: 0;
+    }
+    50% {
+    opacity: 0.7;
+    }
+    100% {
+    opacity: 1;
+    }
+    }
+    .text-wrapper{
+    background-color: white;
+    color:#181818;
+    border-radius: 10px 100px / 120px;
+    font-size: 1.4vw;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 2em;
+    padding-left: 2em;
+    line-height: 0.9;
+    width: 7em;
+    transition: border-radius 1s, color1s, background-color 1s;
+    }
+    .text-wrapper:hover{
+    border-radius: 30px 30px 30px 30px;
+    color: #1e6025;
+    background-color: #eee;
+    }
+    div[id^="hello"] 
+    {
+    visibility:hidden;
+
+border-radius: 10px 10px 10px 10px;
+color: black;
+border: 5px solid green;
+background-color: white;
+cursor: pointer;
+
+margin-bottom: 85px;
+}
+
+    #experUp{
+    padding-top: 0.5em;
+    font-weight: 600;
+    color: #193420;
+    text-align: center;
+    line-height: 0.4;
+    }
+    #wrap-p{
+    text-align: initial;
+    padding: 0.5em;
+    margin: 0.2em
+    }
+    #wrap-p:hover {
+    background-color: orange;
+    box-shadow: 6px 9px 5px 1px #323232c2;
+    border-radius: 10px;
+    }
+    #experUp:hover~p{
+    background-color: orange;
+    box-shadow: 6px 9px 5px 1px #323232c2;
+    border-radius: 10px;
+    }
+
+    [class^="circle"],.center  {
+        top:50%;
+    
+    }
+
+    #span1{
+    margin-top: 0.4em;
+    margin-right: 1em;
+    }
+    
+    #line-center {
+    margin-left: 0;
+    }
+    

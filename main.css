@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    background-color: chocolate;
+}
+
+header {
+    text-align: center;
+    background-color: cadetblue;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(206, 137, 52);
+    width: 100%;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.details-container {
+    margin-bottom: 76px;
+}
+
+nav {
+    text-align: left;
+}
+
+.overClass {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(12 14 28 / 91%);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overClass-content {
+    position: relative;
+    top: 10%;
+    width: 93%;
+    text-align: center;
+}
+
+.overClass a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 23px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overClass a:hover,
+.overClass a:focus {
+    color: #f1f1f1;
+}
+
+main {
+
+    height: auto;
+}
+
+.hide {
+    opacity: 0;
+}

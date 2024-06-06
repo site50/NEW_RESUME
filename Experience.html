@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Web Developer Rimma Bogdanova</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Web developer">
+<meta name="keywords" content="web developer, javascript developer, css, html">
+<meta name="robots" content="web developer, javascript developer, css, html">
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="experience.css">
+<style>
+</style>
+
+<body>
+	<nav>
+		<div id='show-menu'></div>
+	</nav>
+	<script src="menu.js"></script>
+	<main>
+		<div class='wrapper-box'>
+			<div id="ex-an">
+				<div class='exper1 anima1 b'>
+					<div class='text-wrapper t' id="text-wrapper0">&#128073; </div>
+				</div>
+				<div id="hello0">
+					<p id="wrap-p">My experience with:</p>
+					<hr>
+					<p id="wrap-p">&#10004; SQL</p>
+					<p id="wrap-p">&#10004; PostgreSql</p>
+					<p id="wrap-p">&#10004; Node.js</p>
+					<p id="wrap-p">&#10004; PHP</p>
+					<p id="wrap-p">&#10004; Mysql</p>
+					<p id="wrap-p">&#10004; JavaScript</p>
+					<p id="wrap-p">&#10004; bcryptjs </p>
+					<p id="wrap-p">&#10004; body-parser </p>
+					<p id="wrap-p">&#10004; jsonwebtoken </p>
+					<p id="wrap-p">&#10004; passport-jwt </p>
+					<p id="wrap-p">&#10004; Express.js </p>
+					<p id="wrap-p">&#10004; Laravel </p>
+				</div>
+			</div>
+			<div id="ex-an">
+				<div class='exper2 anima2 b'>
+					<div class='text-wrapper t' id="text-wrapper1">&#128073; </div>
+
+				</div>
+				<div id="hello1">
+					<p id="wrap-p">My experience with:</p>
+					<hr>
+					<p id="wrap-p">&#10004;@media query</p>
+					<p id="wrap-p">&#10004;Bootstrap</p>
+					<p id="wrap-p">&#10004;Material</p>
+					<p id="wrap-p">&#10004;GrideBox/FlexBox</p>
+					<p id="wrap-p">&#10004;-webkit</p>
+					<p id="wrap-p">&#10004;-moz-</p>
+					<p id="wrap-p">&#10004;-o-</p>
+					<p id="wrap-p">&#10004;-ms-</p>
+					<p id="wrap-p"></p>
+				</div>
+			</div>
+			<div id="ex-an">
+				<div class='exper3 anima3 b'>
+					<div class='text-wrapper t' id="text-wrapper2">&#128073; </div>
+				</div>
+				<div id="hello2">
+					<p id="wrap-p">My experience with:</p>
+					<hr>
+					<div id="experUp">-Framework-</div>
+					<p id="wrap-p">&#10004;Angular</p>
+					<p id="wrap-p">&#10004;Vue.js</p>
+					<p id="wrap-p">&#10004;Express</p>
+					<div id="experUp">-Library-</div>
+					<p id="wrap-p">&#10004;Redux</p>
+					<p id="wrap-p">&#10004;Redux-Saga</p>
+					<p id="wrap-p">&#10004;React</p>
+					<p id="wrap-p">&#10004;jQuery</p>
+					<p id="wrap-p">&#10004;Move.js</p>
+					<p id="wrap-p">Also with: JSON API, GitHub</p>
+				</div>
+			</div>
+		</div>
+		<script type='text/javascript'>
+			function df() {
+				var btn = document.querySelectorAll('.b');
+				btn.forEach(bG);
+			}
+			df();
+			function bG(btn, index) {
+				btn.addEventListener('click', () => {
+					var el = document.getElementById("hello" + index);
+					setTimeout(function () {
+						el.style = 'visibility: visible';
+					}, 600);
+				})
+			}
+			var show_ex = document.getElementById('hello1');
+			show_ex = addEventListener('click', () => {
+				setTimeout(function () {
+					document.getElementById('line-center').style = "visibility:hidden";
+					document.getElementById("hello1")[1].style = "visibility:visible";
+				}, 300);
+			})
+			var line_ex = document.getElementById('line-center');
+			line_ex = addEventListener('click', () => {
+				setTimeout(function () {
+					document.getElementById('line-center').style = "visibility:hidden";
+					document.getElementById("hello1").style = "visibility:visible";
+				}, 300);
+			})
+			var arr = [
+				{ name: '&#128073; BackEnd' },
+				{ name: '&#128073; Lauout' },
+				{ name: '&#128073; Framework' },
+			];
+			function df5() {
+				var wrap = document.querySelectorAll('.b');
+				wrap.forEach(bG5);
+			}
+			df5();
+			var flag = 0;
+			function bG5(wrap, we) {
+				var el5 = document.getElementById("text-wrapper" + we);
+				el5.innerHTML = arr[we].name;
+				wrap.addEventListener('mouseover', () => {
+					console.log(we);
+					if (flag == 0) {
+						var el5 = document.getElementById("text-wrapper" + we);
+						el5.innerHTML = arr[we].name;
+						flag = 1;
+					}
+				})
+			}	
+		</script>
+	</main>
+	<footer>
+		<div id='show-footer'></div>
+	</footer>
+	<script src="footer.js"></script>
+</body>
+
+</html>
