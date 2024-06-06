@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="utf-8">
-<title>Web Developer Rimma Bogdanova</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Web developer">
-<meta name="keywords" content="web developer, javascript developer, css, html">
-<meta name="robots" content="web developer, javascript developer, css, html">
-<link rel="stylesheet" type="text/css" href="main.css">
-<link rel="stylesheet" type="text/css" href="experience.css">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Web developer">
+	<meta name="author" content="Rimma Bogdanova">
+	<meta name="Keywords" content="web developer, javascript developer, css, html, HTML5">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="experience.css">
+	<title>Web Developer Rimma Bogdanova</title>
+</head>
+
 <style>
 </style>
 
@@ -24,20 +27,9 @@
 					<div class='text-wrapper t' id="text-wrapper0">&#128073; </div>
 				</div>
 				<div id="hello0">
-					<p id="wrap-p">My experience with:</p>
+					<p id="title-skills">My experience with:</p>
 					<hr>
-					<p id="wrap-p">&#10004; SQL</p>
-					<p id="wrap-p">&#10004; PostgreSql</p>
-					<p id="wrap-p">&#10004; Node.js</p>
-					<p id="wrap-p">&#10004; PHP</p>
-					<p id="wrap-p">&#10004; Mysql</p>
-					<p id="wrap-p">&#10004; JavaScript</p>
-					<p id="wrap-p">&#10004; bcryptjs </p>
-					<p id="wrap-p">&#10004; body-parser </p>
-					<p id="wrap-p">&#10004; jsonwebtoken </p>
-					<p id="wrap-p">&#10004; passport-jwt </p>
-					<p id="wrap-p">&#10004; Express.js </p>
-					<p id="wrap-p">&#10004; Laravel </p>
+					<div id="skills-back"></div>
 				</div>
 			</div>
 			<div id="ex-an">
@@ -46,17 +38,9 @@
 
 				</div>
 				<div id="hello1">
-					<p id="wrap-p">My experience with:</p>
+					<p id="title-skills">My experience with:</p>
 					<hr>
-					<p id="wrap-p">&#10004;@media query</p>
-					<p id="wrap-p">&#10004;Bootstrap</p>
-					<p id="wrap-p">&#10004;Material</p>
-					<p id="wrap-p">&#10004;GrideBox/FlexBox</p>
-					<p id="wrap-p">&#10004;-webkit</p>
-					<p id="wrap-p">&#10004;-moz-</p>
-					<p id="wrap-p">&#10004;-o-</p>
-					<p id="wrap-p">&#10004;-ms-</p>
-					<p id="wrap-p"></p>
+					<div id="skills-lauout"></div>
 				</div>
 			</div>
 			<div id="ex-an">
@@ -66,21 +50,75 @@
 				<div id="hello2">
 					<p id="wrap-p">My experience with:</p>
 					<hr>
-					<div id="experUp">-Framework-</div>
-					<p id="wrap-p">&#10004;Angular</p>
-					<p id="wrap-p">&#10004;Vue.js</p>
-					<p id="wrap-p">&#10004;Express</p>
-					<div id="experUp">-Library-</div>
-					<p id="wrap-p">&#10004;Redux</p>
-					<p id="wrap-p">&#10004;Redux-Saga</p>
-					<p id="wrap-p">&#10004;React</p>
-					<p id="wrap-p">&#10004;jQuery</p>
-					<p id="wrap-p">&#10004;Move.js</p>
-					<p id="wrap-p">Also with: JSON API, GitHub</p>
+					<div id="experUp">Framework &
+						<br>
+						<br>
+						<br>
+						Library
+					</div>
+					<div id="skills-framework"></div>
 				</div>
 			</div>
 		</div>
-		<script type='text/javascript'>
+		<script>
+			var skillsBackEnd = [
+				'&#10004; SQL',
+				'&#10004; PostgreSql',
+				'&#10004; Node.js',
+				'&#10004; PHP',
+				'&#10004; Mysql',
+				'&#10004; JavaScript',
+				'&#10004; body-parser',
+				'&#10004; bcryptjs',
+				'&#10004; jsonwebtoken',
+				'&#10004; passport-jwt',
+				'&#10004; Express.js',
+				'&#10004; Laravel'
+			]
+			var skillsLauout = [
+				'&#10004;@media query',
+				'&#10004;Bootstrap',
+				'&#10004;Material',
+				'&#10004;GrideBox/FlexBox',
+				'&#10004;-webkit',
+				'&#10004;-moz-',
+				'&#10004;-o-',
+				'&#10004;-ms-'
+			]
+
+			var skillsFramework = [
+				'&#10004;Angular',
+				'&#10004;Vue.js',
+				'&#10004;Express',
+				'&#10004;Redux',
+				'&#10004;Redux-Saga',
+				'&#10004;React',
+				'&#10004;jQuery',
+				'&#10004;Move.js',
+				'Also with: JSON API and GitHub',
+
+			]
+			var html = '<p>';
+			for (var i = 0; i < skillsBackEnd.length; i++) {
+				html += '<p id="wrap-p">' + skillsBackEnd[i] + '</p>';
+			}
+			html += '</p>';
+			document.getElementById('skills-back').innerHTML = html;
+
+			var html = '<p>';
+			for (var i = 0; i < skillsLauout.length; i++) {
+				html += '<p id="wrap-p">' + skillsLauout[i] + '</p>';
+			}
+			html += '</p>';
+			document.getElementById('skills-lauout').innerHTML = html;
+
+			var html = '<p>';
+			for (var i = 0; i < skillsFramework.length; i++) {
+				html += '<p id="wrap-p">' + skillsFramework[i] + '</p>';
+			}
+			html += '</p>';
+			document.getElementById('skills-framework').innerHTML = html;
+
 			function df() {
 				var btn = document.querySelectorAll('.b');
 				btn.forEach(bG);
@@ -111,8 +149,10 @@
 			var arr = [
 				{ name: '&#128073; BackEnd' },
 				{ name: '&#128073; Lauout' },
-				{ name: '&#128073; Framework' },
+				{ name: '&#128073; Framework' }
 			];
+
+
 			function df5() {
 				var wrap = document.querySelectorAll('.b');
 				wrap.forEach(bG5);

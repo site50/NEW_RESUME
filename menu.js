@@ -10,8 +10,8 @@ document.getElementById("show-menu").innerHTML =
 	+ '<div class="overClass-content">'
 	+ '<a href="Home.html">Home</a>'
 	+ '<a href="About.html">About me</a>'
-	+ '<a href="Experience.html">Experience</a>'
-	+ '<a href="Work.html">My work/code</a>'
+	+ '<a href="Experience.html">My experience</a>'
+	+ '<a href="Work.html">My works/codes</a>'
 	+ '</div>'
 	+ '</div>'
 	+ '<span  style="font-size: 53px;cursor:pointer; padding:23px;color: aliceblue;"  onclick="openMenu()">&#9776; </span>';
